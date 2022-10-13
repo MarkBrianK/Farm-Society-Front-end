@@ -12,6 +12,31 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.header {
+  background-color: #173A17;
+  height: 30vh;
+  color: white;
+
+}
+.upheader {
+  background-color: #263826;
+  color: white;
+}
+.footer{
+  background-color: #173A17;
+  height: 30vh;
+}
+.upheader .nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.nav-section a {
+  color: white;
+  text-decoration: none;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +61,5 @@
     transform: rotate(360deg);
   }
 }
+
+
