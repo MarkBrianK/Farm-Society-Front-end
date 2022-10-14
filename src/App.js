@@ -1,16 +1,18 @@
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import Login from "./Components/Login";
- import Navbar from "./Components/Navbar"
+import Header from "./Components/Header"
 import FarmInput from './Components/ FarmInputs';
 import Farmers from "./Components/Farmer";
 import Contacts from "./Components/Contact";
+import Footer from "./Components/Footer"
 function App() {
 
   return (
     <div className="App">
 
-      <Navbar />
+
       <BrowserRouter>
+      <Header />
       <Switch>
         <Route exact path='/login'>
         <Login />
@@ -31,6 +33,7 @@ function App() {
 
 
       </Switch>
+      <Footer />
       </BrowserRouter>
 
     </div>

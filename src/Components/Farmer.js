@@ -12,7 +12,6 @@ function Farmer(){
           <TableCell>Name </TableCell>
           <TableCell>Location</TableCell>
           <TableCell>Lead Mechanic</TableCell>
-          <TableCell>Garage Certification Number</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
