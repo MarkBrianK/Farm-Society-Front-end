@@ -4,6 +4,7 @@ function Farmer(){
         width: "80%",
         margin: "20px 10%"
       }
+      
     return(
         <div>
                <Table style={tableStyle}>
