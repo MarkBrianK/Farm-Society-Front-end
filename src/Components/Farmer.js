@@ -5,14 +5,15 @@ function Farmer(){
         width: "80%",
         margin: "20px 10%"
       }
-      const [farmers, setFarmers]= useState([])
+  const [farmers, setFarmers]= useState([])
 
       useEffect(()=>  {
-        fetch("https://immense-dawn-24558.herokuapp.com/farmers")
+        fetch("http://127.0.0.1:3000/farmers")
         .then((res)=>  res.json())
         .then((data)=>{
             console.log(data)
             setFarmers(data)
+
 
         })
       },[])
@@ -38,7 +39,7 @@ function Farmer(){
               onClick={() => {
               }
               }
-            >
+            > 
 
             </Button>
           </TableCell>

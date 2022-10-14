@@ -14,9 +14,20 @@
 }
 .header {
   background-color: #173A17;
-  height: 15vh;
+  height: 5vh;
   color: white;
 
+}
+.image {
+  height: 50vh;
+}
+.image img {
+  width: 100%;
+
+}
+.header h1{
+  /* float: left; */
+  font-size: larger;
 }
 .upheader {
   background-color: #263826;
@@ -35,6 +46,9 @@
 .nav-section a {
   color: white;
   text-decoration: none;
+}
+.homepage p {
+  font-size: larger;
 }
 
 
