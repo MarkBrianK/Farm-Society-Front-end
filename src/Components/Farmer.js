@@ -1,10 +1,21 @@
 import { Table, TableCell, TableRow, TableHead, TableBody, Button } from "@mui/material";
+import React,{useState, useEffect} from "react"
 function Farmer(){
     const tableStyle = {
         width: "80%",
         margin: "20px 10%"
       }
-      
+      const [farmers, setFarmers]= useState([])
+
+      useEffect(()=>  {
+        fetch("https://immense-dawn-24558.herokuapp.com/farmers")
+        .then((res)=>  res.json())
+        .then((data)=>{
+            console.log(data)
+            setFarmer(data)
+
+        })
+      },[])
     return(
         <div>
                <Table style={tableStyle}>
