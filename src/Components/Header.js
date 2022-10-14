@@ -9,8 +9,8 @@ function Header(){
                 <div className="nav-section">
                 <p>Have a Question?<a href="mailto:kariukimarkbrian@gmail.com" > kariukimarkbrian@gmail</a></p>
                 <NavLink to = '/' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Home </NavLink>
-                <NavLink to = '/drivers' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Farmer</NavLink>
-                <NavLink to = '/garages' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Farmers Input</NavLink>
+                <NavLink to = '/farmers' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Farmer</NavLink>
+                <NavLink to = '/' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Farmers Input</NavLink>
                 <NavLink to = '/contacts' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Contact Us</NavLink>
                 <NavLink to = '/signup' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Create an Account</NavLink>
 

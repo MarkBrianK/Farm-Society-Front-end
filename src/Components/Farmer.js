@@ -12,7 +12,7 @@ function Farmer(){
         .then((res)=>  res.json())
         .then((data)=>{
             console.log(data)
-            setFarmer(data)
+            setFarmers(data)
 
         })
       },[])
@@ -22,27 +22,29 @@ function Farmer(){
       <TableHead>
         <TableRow style={{ fontSize: "18px" }}>
           <TableCell>Name </TableCell>
-          <TableCell>Location</TableCell>
-          <TableCell>Lead Mechanic</TableCell>
+          <TableCell>Id Number </TableCell>
+          <TableCell>Membership Number</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
+        {farmers.map((farmer)=>(
           <TableRow >
-            <TableCell>{}</TableCell>
-            <TableCell>{}</TableCell>
-            <TableCell>{}</TableCell>
-            <TableCell>{}</TableCell>
-            <TableCell>
-              <Button
-                style={{ margin: "0px 20px" }}
-                onClick={() => {
-                }
-                }
-              >
+          <TableCell>{farmer.name}</TableCell>
+          <TableCell>{farmer.id_number}</TableCell>
+          <TableCell>{farmer.membership_number}</TableCell>
+          <TableCell>
+            <Button
+              style={{ margin: "0px 20px" }}
+              onClick={() => {
+              }
+              }
+            >
 
-              </Button>
-            </TableCell>
-          </TableRow>
+            </Button>
+          </TableCell>
+        </TableRow>
+        ))}
+
       </TableBody>
     </Table>
 
