@@ -1,10 +1,11 @@
-import { BrowserRouter, Route, Switch} from "react-router-dom";
-import Login from "./Components/Login";
+import { BrowserRouter, Route, Switch} from "react-router-dom"
 import Header from "./Components/Header"
 import FarmInput from './Components/ FarmInputs';
 import Farmers from "./Components/Farmer";
 import Contacts from "./Components/Contact";
 import Footer from "./Components/Footer"
+import HomePage from "./Components/HomePage"
+import SignUp from "./Components/SignUp";
 function App() {
 
   return (
@@ -14,8 +15,9 @@ function App() {
       <BrowserRouter>
       <Header />
       <Switch>
-        <Route exact path='/login'>
-        <Login />
+        <Route exact path='/'>
+          <HomePage />
+
         </Route>
         <Route exact path='/inputs'>
 
@@ -29,6 +31,9 @@ function App() {
         </Route>
         <Route path='/contacts'>
           <Contacts />
+        </Route>
+        <Route path='/signup'>
+          <SignUp />
         </Route>
 
 

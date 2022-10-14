@@ -12,6 +12,8 @@ function Header(){
                 <NavLink to = '/drivers' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Driver</NavLink>
                 <NavLink to = '/garages' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Garage</NavLink>
                 <NavLink to = '/contacts' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Contact Us</NavLink>
+                <NavLink to = '/signup' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Create an Account</NavLink>
+
                 </div>
 
             </div>
