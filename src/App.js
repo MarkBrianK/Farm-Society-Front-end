@@ -6,6 +6,7 @@ import Contacts from "./Components/Contact";
 import Footer from "./Components/Footer"
 import HomePage from "./Components/HomePage"
 import SignUp from "./Components/SignUp";
+import Login from "./Components/Login"
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
 
       <BrowserRouter>
       <Header />
+      {/* <Login /> */}
       <Switch>
         <Route exact path='/'>
           <HomePage />

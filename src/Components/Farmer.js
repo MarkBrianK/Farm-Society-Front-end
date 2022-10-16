@@ -8,7 +8,7 @@ function Farmer(){
   const [farmers, setFarmers]= useState([])
 
       useEffect(()=>  {
-        fetch("http://127.0.0.1:3000/farmers")
+        fetch("https://immense-dawn-24558.herokuapp.com/farmers")
         .then((res)=>  res.json())
         .then((data)=>{
             console.log(data)
@@ -39,7 +39,7 @@ function Farmer(){
               onClick={() => {
               }
               }
-            > 
+            >
 
             </Button>
           </TableCell>

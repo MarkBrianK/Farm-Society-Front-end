@@ -8,7 +8,7 @@ function FarmInput(){
   const [farmersInputs, setFarmersInputs]= useState([])
 
       useEffect(()=>  {
-        fetch("http://127.0.0.1:3000/farmer_inputs")
+        fetch("https://immense-dawn-24558.herokuapp.com/farmer_inputs")
         .then((res)=>  res.json())
         .then((data)=>{
             console.log(data)
