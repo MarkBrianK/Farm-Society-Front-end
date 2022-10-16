@@ -12,7 +12,7 @@ function Header(){
                 <NavLink to = '/farmers' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Farmer</NavLink>
                 <NavLink to = '/inputs' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Farmer Input</NavLink>
                 <NavLink to = '/contacts' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Contact Us</NavLink>
-                <NavLink to = '/signup' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Create an Account</NavLink>
+                <NavLink to = '/logout' exact="true" style={{textDecoration : "none", color :"white", fontSize:20}}>Logout</NavLink>
 
                 </div>
 

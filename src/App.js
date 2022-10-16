@@ -7,10 +7,23 @@ import Footer from "./Components/Footer"
 import HomePage from "./Components/HomePage"
 import SignUp from "./Components/SignUp";
 import Login from "./Components/Login"
+import React,{useState, useEffect} from "react";
+import Navbar from "./Components/Navbar";
 function App() {
 
-  return (
-    <div className="App">
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetch("https://immense-dawn-24558.herokuapp.com/users").then((response) => {
+      if (response.ok) {
+        response.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+  if (user) {
+    return (
+      <div className="App">
 
 
       <BrowserRouter>
@@ -34,17 +47,23 @@ function App() {
         <Route path='/contacts'>
           <Contacts />
         </Route>
-        <Route path='/signup'>
-          <SignUp />
+        <Route path='/logout'>
+          <Navbar />
         </Route>
+        <Footer />
 
 
       </Switch>
-      <Footer />
-      </BrowserRouter>
 
-    </div>
-  );
+      </BrowserRouter>
+      </div>
+
+    )
+  } else {
+    return <Login onLogin={setUser} />;
+  }
+
+
 }
 
 export default App;

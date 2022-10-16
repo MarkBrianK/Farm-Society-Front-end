@@ -5,7 +5,7 @@ function Contact(){
 <div class="flex items-center justify-center p-12">
 
   <div class="mx-auto w-full max-w-[550px]">
-    <form action="https://formbold.com/s/FORM_ID" method="POST">
+    <form method="POST">
       <div class="mb-5">
         <label
           for="name"
@@ -69,7 +69,7 @@ function Contact(){
       <div>
         <button
           class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
-          
+
         >
           Submit
         </button>
