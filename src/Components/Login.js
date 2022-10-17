@@ -37,7 +37,7 @@ const Login = ({setUser}) => {
         <label class="font-semibold text-sm text-gray-600 pb-1 block" >email</label>
         <input type="text" id="username" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"value={email} onChange={(e) => setEmail(e.target.value)}  />
         <label class="font-semibold text-sm text-gray-600 pb-1 block">Password</label>
-        <input type="text" id="password" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input type="password" id="password" class="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"value={password} onChange={(e) => setPassword(e.target.value)} />
         <button type="button" class="transition duration-200 bg-blue-500 hover:bg-blue-600 focus:bg-blue-700 focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block" onClick={handleSubmit}>
             <span class="inline-block mr-2">Login</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block">
